@@ -1,0 +1,208 @@
+*.
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+.main_container {
+  width: 1140px;
+  margin: 0 auto 0 auto;
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 50px;
+}
+nav {
+  display: flex;
+}
+.nav a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.025em;
+  padding-left: 56px;
+  color: black;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  background-image: url(../img/banner-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 418px;
+}
+.transparent {
+  width: 555px;
+  height: 180px;
+  background-color: rgba(0, 159, 227, 0.68);
+}
+.transparent h3 {
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: #fff;
+  padding-left: 48px;
+  font-family: 'Open Sans', sans-serif;
+  width: 460px;
+}
+.main-text {
+  display: flex;
+  width: 100%;
+}
+.container-white {
+  width: 100%;
+}
+.container-orang {
+  width: 100%;
+  background-color: #f39200;
+}
+.text, .text-orang  {
+  padding: 0 50px;
+}
+.text h3, .text-orang h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 35px;
+}
+.text-orang h3 {
+  color:#fff;
+}
+.text p {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.57);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5em;
+  padding-top: 0.5vw;
+}
+.text .p_3{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.p_orang {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+.p_orang2 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 5px;
+}
+.p_orang3 {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgba(255, 255, 225, 0.7);
+  font-family: 'Open Sans', sans-serif;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+.btn {
+  border: 1px solid #fff;
+  width: 135px;
+  height: 35px;
+  text-align: center;
+  margin: 55px 0 80px 174px;
+}
+.btn:hover{
+  background-color: #ff9b05;
+  box-shadow: 0 0 5px #fff;
+}
+.main-img {
+  width: 100%;
+  display: flex;
+}
+.block_img1, .block_img2 {
+  width: 100%;
+  margin: 0;
+}
+.picture1 {
+  background-image: url(../img/content-image-1.jpg);
+}
+.picture2 {
+  background-image: url(../img/content-image-3.jpg);
+}
+.picture3 {
+  background-image: url(../img/content-image-2.jpg);
+}
+.picture4 {
+  background-image: url(../img/content-image-4.jpg);
+}
+.picture1, .picture2, .picture3, .picture4 {
+  width: 100%;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main-img a {
+  text-decoration: none;
+}
+.mini-block1, .mini-block2, .mini-block3, .mini-block4 {
+  position: absolute;
+  bottom: 12px;
+  padding: 0 56px;
+  height: 38px;
+  background-color: rgba(0, 159, 227, 0.9);
+  text-align: center;
+  line-height: 36px;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+.mini-block1:hover, .mini-block2:hover, .mini-block3:hover, .mini-block4:hover {
+  background: linear-gradient(to bottom, rgba(0, 159, 227, 0.7), rgb(8, 73, 178), rgba(0, 159, 227, 0.7));
+  box-shadow: 0 0 8px #0bdae8;
+}
+@media screen and (max-width: 768px) {
+  .main-img {
+    flex-direction: column;
+  }
+  .picture1, .picture2, .picture3, .picture4 {
+    height: 450px;
+  }
+  .mini-block1, .mini-block2, .mini-block3, .mini-block4 {
+    font-size: 36px;
+    height: 76px;
+    line-height: 72px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-text {
+    flex-direction: column;
+  }
